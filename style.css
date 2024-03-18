@@ -1,0 +1,26 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Horizontally center the container */
+    align-items: center; /* Vertically center the container */
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    
+    width: 800px; /* Adjusted width for a 4x4 grid */
+    height: 800px; /* Adjusted height for a 4x4 grid */
+    border: 1px solid black; /* Optional: Add border for better visualization */
+}
+
+.square {
+    border: 1px solid #000;
+    box-sizing: border-box; /* Ensure borders are included in the width/height calculation */
+    transition: background-color 0.5s; /* Add transition for smooth color change */
+}
+
+.square:hover{
+    background-color: aqua;
+}
+
